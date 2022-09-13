@@ -1,0 +1,330 @@
+html,
+* {
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --color: #ef513c;
+}
+
+body {
+  height: auto;
+}
+
+header {
+  background: url(../images/mobile_welcome_bg.png) no-repeat top;
+  height: auto;
+  background-size: cover;
+}
+
+nav {
+  list-style: none;
+  display: flex;
+}
+
+nav > ul {
+  list-style: none;
+  display: none;
+}
+
+.logo {
+  display: none;
+}
+
+.hamburger-button {
+  width: 25px;
+  margin: 0.5em 0 0 1em;
+  position: fixed;
+}
+
+.welcome {
+  /* text-align: left;
+  margin: 5em auto auto 1em; */
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin-left: 1em;
+}
+
+.welcome-text {
+  color: var(--color);
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-top: 4em;
+}
+
+.welcome-header {
+  color: var(--color);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  margin-top: 0;
+}
+
+.welcome-message {
+  border: 3px solid rgb(255, 255, 255);
+  width: 87%;
+  padding: 1em 1em;
+  line-height: 1.5em;
+  font-size: 14px;
+  height: auto;
+  text-align: justify;
+  background-color: #f8f8f8;
+}
+
+.time-location {
+  font-size: 15px;
+  font-weight: 500;
+  color: #606060;
+  margin-bottom: 3em;
+}
+
+.time-location > h3 {
+  margin-bottom: 0;
+}
+
+.time-location > p {
+  margin-top: 0.5em;
+}
+
+.main-program {
+  width: 100%;
+  background-color: #272a32;
+  background-image: url(../images/pattern_bg.png);
+  margin-left: 0;
+  height: auto;
+  padding-top: 50px;
+  overflow: auto;
+}
+
+.main-program > h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  margin: 0 0 0 0;
+}
+
+.main-program-title-low-bar {
+  width: 53px;
+  height: 16px;
+  border-bottom: 1px solid #ef513c;
+  margin: 0 auto 54px;
+  margin-bottom: 2em;
+}
+
+.program-list {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: auto;
+  justify-content: flex-start;
+}
+
+.program {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  background-color: rgba(61, 64, 72, 0.6);
+  height: auto;
+  align-items: center;
+  padding: 16px 0;
+  width: 100%;
+  flex: 1 1 0;
+  margin-bottom: 0;
+  margin-left: 1em;
+}
+
+.program > ul {
+  margin-bottom: 1em;
+}
+
+.program-title {
+  color: var(--color);
+  font-size: 14px;
+  width: 10%;
+}
+
+.program-desc {
+  color: #fff;
+  font-size: 12px;
+  justify-content: flex-start;
+  height: auto;
+  width: 40%;
+}
+
+.program-icon {
+  margin-left: 1em;
+}
+
+.join-summit {
+  text-align: center;
+  width: 70%;
+  margin: 2em auto 2em auto;
+  height: 4em;
+  background-color: var(--color);
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+.speaker-details {
+  width: 100%;
+}
+
+.speakers-header {
+  text-align: center;
+}
+
+.speakers {
+  display: flex;
+  flex-direction: column;
+}
+
+.speaker {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.5em;
+  flex-basis: 100%;
+}
+
+.speaker-photo {
+  flex-basis: 100%;
+  background-size: contain;
+}
+
+.photo-1 {
+  background: url(../images/speaker_01.png) no-repeat center;
+}
+
+.photo-2 {
+  background: url(../images/speaker_02.png) no-repeat center;
+}
+
+.photo-3 {
+  background: url(../images/speaker_03.png) no-repeat center;
+}
+
+.photo-4 {
+  background: url(../images/speaker_04.png) no-repeat center;
+}
+
+.photo-5 {
+  background: url(../images/speaker_05.png) no-repeat center;
+}
+
+.photo-6 {
+  background: url(../images/speaker_06.png) no-repeat center;
+}
+
+.speaker-details2 {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.speaker-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.speaker-honours {
+  color: var(--color);
+  font-style: italic;
+  font-size: 12px;
+}
+
+.separator {
+  width: 2em;
+  margin-left: 0;
+}
+
+.speaker-achievements {
+  font-size: 12px;
+}
+
+/* About Page */
+.center {
+  text-align: center;
+}
+
+.about-welcome {
+  padding-top: 4em;
+}
+
+.about-welcome-text {
+  font-size: 20px;
+  color: var(--color);
+}
+
+.about-header {
+  font-size: 30px;
+  color: var(--color);
+}
+
+.about-message {
+  background-color: #fff;
+  border: 1px solid black;
+  padding: 1em;
+  font-size: 14px;
+  width: 90%;
+  margin: auto;
+}
+
+.contact {
+  width: 70%;
+  margin: auto;
+}
+
+.contact-text {
+  font-size: 13px;
+}
+
+.contact-email {
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 3em;
+}
+
+.hr-about-1 {
+  width: 30px;
+  border-color: var(--color);
+  outline: none;
+}
+
+.about-logo {
+  font-size: 12px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.logo-in-about {
+  border: 1px solid black;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.past-summits {
+  width: 70%;
+  margin: auto;
+}
+
+.partners {
+  background-color: #272a32;
+  color: #fff;
+  padding: 0.5em;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  flex-basis: 100%;
+}
