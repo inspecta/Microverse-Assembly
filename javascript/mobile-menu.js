@@ -15,3 +15,8 @@ closeMobileMenu.addEventListener('click', () => {
   menuList.style.display = 'none';
 });
 
+menuList.addEventListener('click', () => {
+  hamburger.style.display = 'block';
+  mobileOverlay.style.display = 'none';
+  menuList.style.display = 'none';
+});
