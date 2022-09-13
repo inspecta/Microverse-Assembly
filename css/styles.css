@@ -4,7 +4,21 @@ html,
 }
 
 :root {
-  --color: #ef513c;
+  --color: #ec5242;
+  --color2: #272a31;
+  --color3: #d3d3d3;
+}
+
+.color1 {
+  color: var(--color);
+}
+
+.color2 {
+  color: var(--color2);
+}
+
+.color3 {
+  color: var(--color3);
 }
 
 body {
@@ -267,9 +281,9 @@ nav > ul {
 
 .about-message {
   background-color: #fff;
-  border: 1px solid black;
-  padding: 1em;
-  font-size: 14px;
+  border: 1px solid var(--color3);
+  padding: 1.5em;
+  font-size: 13px;
   width: 90%;
   margin: auto;
 }
@@ -280,19 +294,24 @@ nav > ul {
 }
 
 .contact-text {
-  font-size: 13px;
+  font-size: 11px;
+  line-height: 2em;
+  margin-bottom: 0;
 }
 
 .contact-email {
   text-decoration: underline;
   font-weight: bold;
-  margin-bottom: 3em;
+  margin: 0 auto 4em auto;
+  font-size: 12px;
 }
 
 .hr-about-1 {
   width: 30px;
   border-color: var(--color);
   outline: none;
+  border-top-width: 0;
+  margin-top: 0;
 }
 
 .about-logo {
@@ -303,21 +322,97 @@ nav > ul {
 }
 
 .logo-in-about {
-  border: 1px solid black;
+  border: 1px solid var(--color3);
   width: 50%;
   margin: auto;
   margin-bottom: 2em;
+  padding: 1em 5em 1em 5em;
+}
+
+.small-text {
+  margin-top: 0;
+  font-size: 10px;
+  margin-left: 40px;
+  border: 1px solid var(--color3);
+  border-left: 0;
+  border-right: 0;
+}
+
+.line-below-about-login {
+  border-color: var(--color3);
+  outline: none;
+  border-top-width: 0;
+  width: 100%;
 }
 
 .past-summits {
-  width: 70%;
+  width: 100%;
   margin: auto;
+  font-size: 12px;
+}
+
+.past-summits-2 {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .partners {
-  background-color: #272a32;
+  background-color: #414246;
   color: #fff;
   padding: 0.5em;
+}
+
+.summit {
+  height: 250px;
+  color: #fff;
+  margin: 2em auto 2em auto;
+}
+
+.summit-one {
+  background: url(../images/speaker_01.png) no-repeat center;
+  background-size: contain;
+}
+
+.summit-two {
+  background: url(../images/speaker_01.png) no-repeat center;
+  background-size: contain;
+}
+
+.overlay-bg {
+  background-color: var(--color);
+  width: 90%;
+  height: 250px;
+  backdrop-filter: blur(0.5px);
+  mix-blend-mode: multiply;
+  position: absolute;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 100%;
+  position: relative;
+}
+
+.summit-year {
+  margin-bottom: 0;
+  font-size: 2em;
+}
+
+.summit-location {
+  font-size: 1em;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 1em auto 1em auto;
 }
 
 footer {
@@ -325,6 +420,11 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 2em;
   flex-basis: 100%;
+  padding: 2em;
+}
+
+.copyright-text {
+  font-size: 10px;
 }
