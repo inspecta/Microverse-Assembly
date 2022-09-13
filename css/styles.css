@@ -428,3 +428,44 @@ footer {
 .copyright-text {
   font-size: 10px;
 }
+
+/* Mobile menu list */
+.menu-overlay {
+  display: none;
+  position: absolute;
+  height: 120%;
+  width: 100%;
+  border-radius: 15px;
+  opacity: 1;
+  backdrop-filter: blur(7px);
+  mix-blend-mode: multiply;
+}
+
+.menu-list-mobile {
+  position: absolute;
+  display: none;
+  background: var(--color2);
+  opacity: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.menu-list-mobile-2 {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1.2em;
+}
+
+.menu-list-mobile-2 li a {
+  text-decoration: none;
+  color: var(--color3);
+}
+
+.menu-list-mobile-2 li a:hover {
+  cursor: pointer;
+  color: var(--color);
+}
