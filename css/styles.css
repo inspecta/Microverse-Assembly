@@ -1,6 +1,6 @@
 html,
 * {
-  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
 }
 
 :root {
@@ -19,6 +19,14 @@ html,
 
 .color3 {
   color: var(--color3);
+}
+
+.font-lato {
+  font-family: "Lato", sans-serif;
+}
+
+.font-coco {
+  font-family: "COCOGOOSE", sans-serif;
 }
 
 body {
@@ -52,8 +60,6 @@ nav > ul {
 }
 
 .welcome {
-  /* text-align: left;
-  margin: 5em auto auto 1em; */
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -65,40 +71,45 @@ nav > ul {
   font-size: 20px;
   margin-bottom: 0;
   padding-top: 4em;
+  font-family: "Lato", sans-serif;
 }
 
 .welcome-header {
   color: var(--color);
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 1.8em;
   margin-top: 0;
+  font-family: "COCOGOOSE", sans-serif;
+  font-weight: 800;
+  line-height: 30px;
 }
 
 .welcome-message {
   border: 3px solid rgb(255, 255, 255);
-  width: 87%;
+  width: 95%;
   padding: 1em 1em;
   line-height: 1.5em;
-  font-size: 14px;
+  font-size: 12px;
   height: auto;
   text-align: justify;
   background-color: #f8f8f8;
+  font-family: "Lato", sans-serif;
+  color: #606060;
 }
 
 .time-location {
-  font-size: 15px;
-  font-weight: 500;
   color: #606060;
   margin-bottom: 3em;
+  font-family: "COCOGOOSE", sans-serif;
 }
 
 .time-location > h3 {
   margin-bottom: 0;
+  font-size: 1.4em;
 }
 
 .time-location > p {
   margin-top: 0.5em;
+  font-size: 10px;
 }
 
 .main-program {
@@ -114,8 +125,9 @@ nav > ul {
 .main-program > h3 {
   text-align: center;
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   margin: 0 0 0 0;
+  font-family: "Lato", sans-serif;
 }
 
 .main-program-title-low-bar {
@@ -132,6 +144,7 @@ nav > ul {
   width: 95%;
   height: auto;
   justify-content: flex-start;
+  margin: 0 auto;
 }
 
 .program {
@@ -145,8 +158,8 @@ nav > ul {
   padding: 16px 0;
   width: 100%;
   flex: 1 1 0;
-  margin-bottom: 0;
-  margin-left: 1em;
+  margin: 0 auto;
+  margin-bottom: 1em;
 }
 
 .program > ul {
@@ -155,16 +168,18 @@ nav > ul {
 
 .program-title {
   color: var(--color);
-  font-size: 14px;
+  font-size: 12px;
   width: 10%;
+  font-family: "COCOGOOSE", sans-serif;
 }
 
 .program-desc {
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   justify-content: flex-start;
   height: auto;
-  width: 40%;
+  width: 50%;
+  font-family: "Lato", sans-serif;
 }
 
 .program-icon {
@@ -180,6 +195,8 @@ nav > ul {
   outline: none;
   border: none;
   color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
 }
 
 .speaker-details {
@@ -188,6 +205,8 @@ nav > ul {
 
 .speakers-header {
   text-align: center;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
 }
 
 .speakers {
@@ -200,42 +219,50 @@ nav > ul {
   flex-direction: row;
   margin-bottom: 0.5em;
   flex-basis: 100%;
+  margin-top: 1em;
+  font-family: "Lato", sans-serif;
 }
 
 .speaker-photo {
-  flex-basis: 100%;
+  flex-basis: 50%;
   background-size: contain;
 }
 
 .photo-1 {
   background: url(../images/speaker_01.png) no-repeat center;
+  background-size: contain;
 }
 
 .photo-2 {
   background: url(../images/speaker_02.png) no-repeat center;
+  background-size: contain;
 }
 
 .photo-3 {
   background: url(../images/speaker_03.png) no-repeat center;
+  background-size: contain;
 }
 
 .photo-4 {
   background: url(../images/speaker_04.png) no-repeat center;
+  background-size: contain;
 }
 
 .photo-5 {
   background: url(../images/speaker_05.png) no-repeat center;
+  background-size: contain;
 }
 
 .photo-6 {
   background: url(../images/speaker_06.png) no-repeat center;
+  background-size: contain;
 }
 
 .speaker-details2 {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 5px;
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -248,7 +275,8 @@ nav > ul {
 .speaker-honours {
   color: var(--color);
   font-style: italic;
-  font-size: 12px;
+  font-size: 10px;
+  font-family: "Lato", sans-serif;
 }
 
 .separator {
@@ -257,7 +285,7 @@ nav > ul {
 }
 
 .speaker-achievements {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 /* About Page */
