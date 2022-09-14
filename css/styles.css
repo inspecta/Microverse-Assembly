@@ -546,3 +546,165 @@ footer {
 }
 
 /* Min-width: 768px media query */
+@media only screen and (min-width: 768px) {
+  .hamburger-button {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5em;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .menu-list-desktop {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5em;
+  }
+
+  .menu-list-desktop li a {
+    text-decoration: none;
+    font-family: var(--fontLato);
+    color: var(--color2);
+    font-weight: bold;
+  }
+
+  .menu-list-desktop li a:hover {
+    color: var(--color);
+  }
+
+  header {
+    background-image: none;
+  }
+
+  .welcome {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #f8f8f8;
+  }
+
+  .welcome-text {
+    margin-bottom: 0.7em;
+    font-weight: bold;
+    font-size: 1.7em;
+  }
+
+  .welcome-header {
+    font-size: 3em;
+    line-height: 40px;
+  }
+
+  .welcome-message {
+    border-color: #fff;
+    width: 75%;
+  }
+
+  .time-location > p {
+    font-style: normal;
+    font-family: var(--fontLato);
+    font-size: 1em;
+  }
+
+  .program-list {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-right: 5px;
+  }
+
+  .program-desc {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .program-title {
+    width: 100%;
+  }
+
+  .program-icon {
+    margin-left: 0;
+  }
+
+  .below-main-program-txt {
+    font-family: var(--fontLato);
+    color: var(--color3);
+    text-decoration: underline;
+    font-size: 1em;
+    padding: 1em;
+    margin-bottom: 2.5em;
+  }
+
+  .join-summit {
+    display: none;
+  }
+
+  .speaker {
+    width: 50%;
+    float: left;
+  }
+
+  .home-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0 1em 0;
+  }
+
+  .home-partners {
+    background-color: #424146;
+    width: 100%;
+  }
+
+  .home-partners-title {
+    font-family: var(--fontLato);
+    color: #8e8e8e;
+    margin-bottom: 0.6em;
+  }
+
+  .hr-about-1 {
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+
+  .home-sponsors {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .home-footer-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    height: 5em;
+  }
+
+  .footer-logo {
+    height: 3em;
+  }
+
+  .home-copyright-text {
+    font-family: var(--fontLato);
+    font-size: 1em;
+    font-weight: bold;
+  }
+}

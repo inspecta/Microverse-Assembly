@@ -55,12 +55,16 @@ const hrLine = document.createElement('hr');
 hrLine.classList.add('hr-about-1');
 speakersSection.appendChild(hrLine);
 
+const speakerContainerMain = document.createElement('div')
+speakerContainerMain.className = 'speakers-main'
+speakersSection.appendChild(speakerContainerMain);
+
 let noOfSpeakers = Object.keys(speakers).length;
 
 speakers.forEach((i) => {
   const speakerContainer = document.createElement('div')
   speakerContainer.className = 'speaker'
-  speakersSection.appendChild(speakerContainer);
+  speakerContainerMain.appendChild(speakerContainer);
 
   const speakerImg = document.createElement('div')
   speakerImg.className = 'speaker-photo ' + `${speakers[speakers.indexOf(i)].photo}`
