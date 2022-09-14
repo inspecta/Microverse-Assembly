@@ -428,13 +428,13 @@ nav > ul {
 }
 
 .summit-one {
-  background: url(../images/speaker_01.png) no-repeat center;
-  background-size: contain;
+  background: url(../images/assembly-1.png) no-repeat center;
+  background-size: cover;
 }
 
 .summit-two {
-  background: url(../images/speaker_01.png) no-repeat center;
-  background-size: contain;
+  background: url(../images/assembly-2.png) no-repeat center;
+  background-size: cover;
 }
 
 .overlay-bg {
@@ -454,6 +454,7 @@ nav > ul {
   color: #fff;
   height: 100%;
   position: relative;
+  width: 100%;
 }
 
 .summit-year {
@@ -579,6 +580,10 @@ footer {
     font-weight: bold;
   }
 
+  a:is(:link, :active, :visited).active {
+    color: var(--color);
+  }
+
   .menu-list li a:hover {
     color: var(--color);
   }
@@ -653,13 +658,35 @@ footer {
     margin-bottom: 2.5em;
   }
 
+  .speakers-main {
+    width: 80%;
+    margin: auto;
+  }
+
   .join-summit {
     display: none;
+  }
+
+  .summit-location {
+    font-weight: normal;
   }
 
   .speaker {
     width: 50%;
     float: left;
+  }
+
+  .speaker-name {
+    font-size: 16px;
+  }
+
+  .speaker-honours {
+    font-size: 12px;
+  }
+
+  .speaker-achievements {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
   }
 
   .home-footer {
@@ -728,18 +755,30 @@ footer {
     padding-top: 1em;
   }
 
+  .contact-text,
+  .contact-email {
+    font-size: 14px;
+  }
+
   .logo-in-about {
     width: 40%;
     border-color: var(--color3);
   }
 
+  .about-logo {
+    font-size: 14px;
+  }
+
   .past-summits-2 {
-    width: 50%;
-    margin: 0 auto;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .summit {
-    width: 35%;
+    width: 43.5%;
   }
 
   .overlay-bg {
@@ -754,12 +793,20 @@ footer {
     margin-top: 2em;
   }
 
+  .small-text {
+    font-size: 12px;
+    color: #424146;
+    font-weight: bold;
+    width: 13em;
+  }
+
   .summit-one {
     float: left;
+    margin: 2em;
   }
 
   .summit-two {
-    float: right;
+    float: left;
   }
 
   .partners {
@@ -768,7 +815,7 @@ footer {
 
   .footer-about {
     background-color: var(--color2);
-    clear: left;
+    clear: both;
   }
 
   .copyright-text {
