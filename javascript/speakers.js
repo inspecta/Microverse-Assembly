@@ -8,28 +8,28 @@ speakers = [
 
   },
   {
-    id: 1,
+    id: 2,
     photo: 'photo-2',
     name: 'SohYeong Nog',
     honours: 'Director at Art Center Nabi and a board member of CC Korea.',
     achievements: 'As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities and the arts..',
   },
   {
-    id: 1,
+    id: 3,
     photo: 'photo-3',
     name: 'Yochai Benkler',
     honours: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School.',
     achievements: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
   },
   {
-    id: 1,
+    id: 4,
     photo: 'photo-4',
     name: 'Yochai Benkler',
     honours: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School.',
     achievements: 'Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006.',
   },
   {
-    id: 1,
+    id: 5,
     photo: 'photo-5',
     name: 'Yochai Benkler',
     honours: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School.',
@@ -46,9 +46,14 @@ speakers = [
 
 const speakersSection = document.getElementById('speakers');
 const speakerHeader = document.createElement('h3')
+
 speakerHeader.classList.add('speakers-header');
 speakersSection.appendChild(speakerHeader);
 speakerHeader.appendChild(document.createTextNode('Featured Speakers'))
+
+const hrLine = document.createElement('hr');
+hrLine.classList.add('hr-about-1');
+speakersSection.appendChild(hrLine);
 
 let noOfSpeakers = Object.keys(speakers).length;
 
