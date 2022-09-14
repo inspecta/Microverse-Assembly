@@ -507,7 +507,7 @@ footer {
 .menu-overlay {
   display: none;
   position: absolute;
-  height: 120%;
+  height: 100%;
   width: 100%;
   border-radius: 15px;
   opacity: 1;
@@ -564,7 +564,7 @@ footer {
     margin: 0 auto;
   }
 
-  .menu-list-desktop {
+  .menu-list {
     display: block;
     display: flex;
     flex-direction: row;
@@ -572,14 +572,14 @@ footer {
     gap: 1.5em;
   }
 
-  .menu-list-desktop li a {
+  .menu-list li a {
     text-decoration: none;
     font-family: var(--fontLato);
     color: var(--color2);
     font-weight: bold;
   }
 
-  .menu-list-desktop li a:hover {
+  .menu-list li a:hover {
     color: var(--color);
   }
 
@@ -706,5 +706,72 @@ footer {
     font-family: var(--fontLato);
     font-size: 1em;
     font-weight: bold;
+  }
+
+  /* About page */
+  .about-welcome-text {
+    display: none;
+  }
+
+  .about-welcome {
+    padding-top: 1em;
+  }
+
+  .about-message {
+    width: 70%;
+    border-color: var(--color3);
+    font-size: 0.9em;
+    margin-bottom: 2em;
+  }
+
+  .about-content {
+    padding-top: 1em;
+  }
+
+  .logo-in-about {
+    width: 40%;
+    border-color: var(--color3);
+  }
+
+  .past-summits-2 {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .summit {
+    width: 35%;
+  }
+
+  .overlay-bg {
+    width: 30%;
+  }
+
+  .overlay-content {
+    width: 100%;
+  }
+
+  .past-summits-title {
+    margin-top: 2em;
+  }
+
+  .summit-one {
+    float: left;
+  }
+
+  .summit-two {
+    float: right;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  .footer-about {
+    background-color: var(--color2);
+    clear: left;
+  }
+
+  .copyright-text {
+    color: var(--color3);
   }
 }
