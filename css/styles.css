@@ -85,7 +85,6 @@ header {
 }
 
 .welcome-header {
-  color: var(--color);
   font-size: 1.8em;
   margin-top: 0;
   font-family: "COCOGOOSE", sans-serif;
@@ -93,7 +92,6 @@ header {
   line-height: 30px;
   background-image: url(../images/assembly-3.jpg);
   background-size: contain;
-  background-clip: text;
   -webkit-background-clip: text;
   color: rgba(255, 30, 5, 0.8);
 }
@@ -600,13 +598,18 @@ footer {
   color: var(--color);
 }
 
-/* --
-  Min-width: 768px media query 
--- */
 @media only screen and (min-width: 768px) {
   .hamburger-button,
   .hamburger {
     display: none;
+  }
+
+  .menu-list li a {
+    text-decoration: none;
+    font-family: var(--fontLato);
+    color: var(--color2);
+    font-weight: bold;
+    cursor: pointer;
   }
 
   .social-bar {
@@ -688,14 +691,6 @@ footer {
     padding-left: 0;
   }
 
-  .menu-list li a {
-    text-decoration: none;
-    font-family: var(--fontLato);
-    color: var(--color2);
-    font-weight: bold;
-    cursor: pointer;
-  }
-
   .menu-list li:last-child a {
     border: 8px solid var(--color);
     color: var(--color);
@@ -730,7 +725,6 @@ footer {
     line-height: 40px;
     background-image: url(../images/assembly-3.jpg);
     background-size: contain;
-    background-clip: text;
     -webkit-background-clip: text;
     color: rgba(255, 30, 5, 0.8);
   }
@@ -938,6 +932,7 @@ footer {
     font-weight: bold;
     width: 13em;
   }
+
   .past-summits {
     display: flex;
     flex-direction: row;

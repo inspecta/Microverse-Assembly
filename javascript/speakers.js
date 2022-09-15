@@ -1,4 +1,4 @@
-speakers = [
+const speakers = [
   {
     id: 1,
     photo: 'photo-1',
@@ -58,8 +58,6 @@ speakersSection.appendChild(hrLine);
 const speakerContainerMain = document.createElement('div')
 speakerContainerMain.className = 'speakers-main'
 speakersSection.appendChild(speakerContainerMain);
-
-let noOfSpeakers = Object.keys(speakers).length;
 
 speakers.forEach((i) => {
   const speakerContainer = document.createElement('div')
