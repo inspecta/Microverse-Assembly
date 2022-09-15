@@ -1,62 +1,61 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Capstone Project
 
-# Project Name
+> This project will be a replica of CC-Global-Summit-2015 website from https://www.behance.net/ gallery. It's a capstone project of the skills and knowledge I have obtained during my first module at Microverse.
 
-> Description the project.
+> It consists of two pages (home and about pages) and these are responsive depending on the screen side.
+
+> It is accessible to all kinds of readers because it's designed with the highly recommended semantic tags, amazing color contrasts, photos and icons.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Major languages - HTML, CSS and JavaScript
+- Frameworks - None
+- Technologies used - Visual Studio Code, Git and Github, Chrome (Browser and it's Dev Tools), Accessibility Tools (Wave Evaluation ool and Web Developer)
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://inspecta.github.io/Capstone-web-project/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Prerequisites 
+  - Local Machine, Git, Text Editor (VS Code preferably)
 
-### Setup
+### Setup 
+  - Checkout the project repository here [Link](https://github.com/inspecta/Capstone-web-project)
 
-### Install
+### Install 
+  - Use can use the repository HTTPS or SSH Urls to clone the project on your local machine or download the ZIP folder and extract its contents. 
 
-### Usage
+### Usage 
+  - Run the index.html file in the root directory of the project using any browser.
 
-### Run tests
+### Run tests 
+  - Use Chrome dev tools
+  - Ensure to checkout any linter errors
 
-### Deployment
-
+### Deployment 
+  - Use Github pages for free and secure deployment.
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Derrick Mulinde**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@inspecta](https://github.com/inspecta)
+- Twitter: [@djmulinde](https://twitter.com/djmulinde)
+- LinkedIn: [derrick-mulinde](https://linkedin.com/in/derrick-mulinde)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to open a new issue in the repository. I will be grateful to have them.
 
 ## Show your support
 
@@ -64,12 +63,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thanks Microverse for the support and inspiration to do this.
+- This replica was originally designed by Cindy Shin in Behance. Checkout Cindy's design [Here](https://www.behance.net/adagio07)
 
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
