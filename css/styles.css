@@ -738,6 +738,7 @@ footer {
   .welcome-message {
     border-color: #fff;
     width: 60%;
+    font-size: 14px;
   }
 
   .time-location > p {
