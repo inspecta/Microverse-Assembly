@@ -744,7 +744,7 @@ footer {
   .program-list {
     display: flex;
     flex-direction: row;
-    width: 82%;
+    width: 75%;
   }
 
   .program {
@@ -760,6 +760,8 @@ footer {
     width: 100%;
     text-align: center;
     padding: 10px;
+    font-size: 12px;
+    font-family: var(--fontLato);
   }
 
   .program-title {
@@ -777,6 +779,7 @@ footer {
     font-size: 1em;
     padding: 1em;
     margin-bottom: 2.5em;
+    display: block;
   }
 
   .speakers-main {
