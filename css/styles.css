@@ -36,6 +36,10 @@ body {
   height: auto;
 }
 
+.social-bar {
+  display: none;
+}
+
 header {
   background: url(../images/mobile_welcome_bg.png) no-repeat top;
   height: auto;
@@ -87,6 +91,11 @@ header {
   font-family: "COCOGOOSE", sans-serif;
   font-weight: 800;
   line-height: 30px;
+  background-image: url(../images/assembly-3.jpg);
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(255, 30, 5, 0.8);
 }
 
 .welcome-message {
@@ -415,19 +424,23 @@ header {
   width: 100%;
 }
 
+.summit-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .past-summits-title {
   font-family: var(--fontLato);
 }
 
-.past-summits {
-  width: 90%;
-  margin: auto;
-  font-size: 15px;
+.past-summits-info {
   font-family: var(--fontLato);
-}
-
-.past-summits-2 {
-  width: 90%;
+  width: 50%;
   margin: auto;
 }
 
@@ -438,39 +451,27 @@ header {
 }
 
 .summit {
-  height: 250px;
+  position: relative;
+  height: 200px;
   color: #fff;
   margin: 2em auto 2em auto;
+  width: 90%;
 }
 
 .summit-one {
-  background: url(../images/assembly-1.png) no-repeat center;
+  background: url(../images/assembly-1.png) no-repeat;
   background-size: cover;
+  background-color: rgba(236, 82, 66, 1);
+  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
 }
 
 .summit-two {
-  background: url(../images/assembly-2.png) no-repeat center;
+  background: url(../images/assembly-1.png) no-repeat;
   background-size: cover;
-}
-
-.overlay-bg {
-  background-color: var(--color);
-  width: 90%;
-  height: 250px;
-  backdrop-filter: blur(0.5px);
+  background-color: rgba(236, 82, 66, 1);
+  background-blend-mode: multiply;
   mix-blend-mode: multiply;
-  position: absolute;
-}
-
-.overlay-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  height: 100%;
-  position: relative;
-  width: 100%;
 }
 
 .summit-year {
@@ -603,14 +604,50 @@ footer {
   Min-width: 768px media query 
 -- */
 @media only screen and (min-width: 768px) {
-  .hamburger-button {
+  .hamburger-button,
+  .hamburger {
     display: none;
+  }
+
+  .social-bar {
+    display: block;
+    top: 0;
+    width: 100%;
+    background-color: #272a31;
+    position: fixed;
+  }
+
+  .social-bar-list {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 5px;
+    width: 87%;
+  }
+
+  .social-bar-list > li > a {
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--fontLato);
+    font-size: 0.8em;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .social-bar-list > li > a:hover {
+    color: var(--color);
   }
 
   .logo {
     display: block;
     height: 3em;
     filter: grayscale(1);
+    transition: all 0.2s;
+  }
+
+  .logo:hover {
+    transform: scale(1.1);
   }
 
   header {
@@ -628,7 +665,8 @@ footer {
     width: 100%;
     position: fixed;
     background-color: #fff;
-    top: 0;
+    top: 2em;
+    box-shadow: var(--color3) 0 2px 8px 0;
   }
 
   .nav-links {
@@ -659,7 +697,7 @@ footer {
   }
 
   .menu-list li:last-child a {
-    border: 4px solid var(--color);
+    border: 8px solid var(--color);
     color: var(--color);
     padding: 3px;
   }
@@ -672,8 +710,12 @@ footer {
     color: var(--color);
   }
 
+  .about-header {
+    padding-top: 2em;
+  }
+
   .welcome {
-    margin: auto;
+    margin-top: 4em;
     width: 80%;
   }
 
@@ -684,8 +726,13 @@ footer {
   }
 
   .welcome-header {
-    font-size: 3em;
+    font-size: 2.5em;
     line-height: 40px;
+    background-image: url(../images/assembly-3.jpg);
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(255, 30, 5, 0.8);
   }
 
   .welcome-message {
@@ -702,7 +749,7 @@ footer {
   .program-list {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 82%;
   }
 
   .program {
@@ -740,6 +787,15 @@ footer {
   .speakers-main {
     width: 80%;
     margin: auto;
+  }
+
+  .summit-one {
+    float: left;
+    margin: 1em;
+  }
+
+  .summit-two {
+    float: right;
   }
 
   .join-summit {
@@ -855,26 +911,20 @@ footer {
 
   .about-logo {
     font-size: 14px;
-  }
-
-  .past-summits-2 {
-    width: 70%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    width: 50%;
   }
 
   .summit {
-    width: 43.5%;
+    background-color: var(--color);
   }
 
-  .overlay-bg {
-    width: 30%;
-  }
-
-  .overlay-content {
-    width: 100%;
+  .past-summits-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    gap: 1em;
+    font-family: var(--fontLato);
   }
 
   .past-summits-title {
@@ -887,14 +937,13 @@ footer {
     font-weight: bold;
     width: 13em;
   }
-
-  .summit-one {
-    float: left;
-    margin: 2em;
-  }
-
-  .summit-two {
-    float: left;
+  .past-summits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 65%;
+    align-items: center;
+    margin: auto;
   }
 
   .partners {
