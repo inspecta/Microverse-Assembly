@@ -13,9 +13,9 @@
 - Frameworks - None
 - Technologies used - Visual Studio Code, Git and Github, Chrome (Browser and it's Dev Tools), Accessibility Tools (Wave Evaluation ool and Web Developer)
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://inspecta.github.io/Capstone-web-project/)
+For Live Demo Link, click [here](https://inspecta.github.io/Capstone-web-project/)
 
 
 ## Getting Started
