@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-For Live Demo Link, click [here](https://inspecta.github.io/Capstone-web-project/)
+For Live Demo Link, click [here](https://inspecta.github.io/Capstone-web-project/index.html)
 
 
 ## Getting Started
