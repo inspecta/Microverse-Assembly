@@ -79,12 +79,12 @@ speakers.forEach((i) => {
   const speakerName = document.createElement('li')
   speakerName.classList.add('speaker-name')
   speakerDetails2.appendChild(speakerName)
-  speakerName.appendChild(document.createTextNode((i.name))
+  speakerName.appendChild(document.createTextNode(i.name))
 
   const speakerHonours = document.createElement('li')
   speakerHonours.classList.add('speaker-honours')
   speakerDetails2.appendChild(speakerHonours)
-  speakerHonours.appendChild(document.createTextNode((i.honours))
+  speakerHonours.appendChild(document.createTextNode(i.honours))
 
   const separatorIcon = document.createElement('li')
   separatorIcon.classList.add('speaker-icon')
@@ -96,5 +96,5 @@ speakers.forEach((i) => {
   const speakerAchievements = document.createElement('li')
   speakerAchievements.classList.add('speaker-achievements')
   speakerDetails2.appendChild(speakerAchievements)
-  speakerAchievements.appendChild(document.createTextNode((i.achievements))
+  speakerAchievements.appendChild(document.createTextNode(i.achievements))
 });
