@@ -430,6 +430,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .past-summits {
@@ -681,9 +682,9 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 2em;
-    width: 80%;
     justify-content: space-between;
-    margin: auto;
+    padding: 0 3em;
+    margin: 0 auto;
   }
 
   .menu-list {
@@ -697,9 +698,13 @@ footer {
   }
 
   .menu-list li:last-child a {
-    border: 8px solid var(--color);
+    border: 5px solid var(--color);
     color: var(--color);
     padding: 3px;
+  }
+
+  .menu-list li:last-child a:hover {
+    background-color: rgba(39, 42, 49, 0.2);
   }
 
   a:is(:link, :active, :visited).active {
@@ -761,6 +766,10 @@ footer {
     margin-right: 5px;
   }
 
+  .program:hover {
+    box-shadow: 0 0 0 2px rgb(255, 255, 255);
+  }
+
   .program-desc {
     width: 100%;
     text-align: center;
@@ -785,11 +794,24 @@ footer {
     padding: 1em;
     margin-bottom: 2.5em;
     display: block;
+    cursor: pointer;
+  }
+
+  .below-main-program-txt:hover {
+    color: var(--color);
   }
 
   .speakers-main {
     width: 80%;
     margin: auto;
+  }
+
+  .summit {
+    background-color: var(--color);
+  }
+
+  .summit:hover {
+    background-color: var(--color2);
   }
 
   .summit-one {
@@ -857,6 +879,11 @@ footer {
     width: 60%;
     margin: auto;
     padding-bottom: 1em;
+    cursor: pointer;
+  }
+
+  .home-sponsors img:hover {
+    scale: 1.1;
   }
 
   /* Home footer */
@@ -915,10 +942,6 @@ footer {
   .about-logo {
     font-size: 14px;
     width: 50%;
-  }
-
-  .summit {
-    background-color: var(--color);
   }
 
   .past-summits-title {
